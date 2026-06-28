@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 db = [{"tipo": "Hurto", "gravedad": "Alta", "lat": 4.6100, "lng": -74.0820}]
 

@@ -1,3 +1,3 @@
-const API_BASE_URL = 'http://127.0.0.1:5000/api';
+const API_BASE_URL = 'https://safenav-backend-v1-ecejgvhmgmakehef.centralus-01.azurewebsites.net/api';
 async function obtenerZonasRiesgo() { return await (await fetch(`${API_BASE_URL}/zonas-riesgo`)).json(); }
 async function reportarNuevaZona(d) { return await (await fetch(`${API_BASE_URL}/reportar`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(d) })).json(); }
