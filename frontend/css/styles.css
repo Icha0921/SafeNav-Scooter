@@ -1,0 +1,12 @@
+/* Estilos complementarios a Bootstrap */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mapa-contenedor { height: 60vh; width: 100%; position: relative; z-index: 1; }
+
+@media (min-width: 768px) {
+    #mapa-contenedor {
+        height: 85vh;
+    }
+}
